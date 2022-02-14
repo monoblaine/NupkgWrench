@@ -14,6 +14,7 @@ namespace NupkgWrench
             ContentFilesCommand.Register(parentCommand, log);
             DependenciesCommand.Register(parentCommand, log);
             FrameworkAssembliesCommand.Register(parentCommand, log);
+            AddGitRepositoryCommand.Register(parentCommand, log);
         }
 
         private static void Run(CommandLineApplication cmd, ILogger log)
